@@ -1,0 +1,60 @@
+.head {
+    font-size: 20px;
+    color: hsl(0, 0%, 61%);
+    margin-bottom: 20px; /* Add space (blank area) below the text */
+}
+.text-build {
+    font-size: 15px;
+    color: black;
+    margin-bottom: 20px; /* Add space (blank area) below the text */
+    margin-right: 20px;
+    top: 30px;
+    margin-left: 30px;
+}
+.text-build a {
+    text-decoration: none;
+    color: black;
+    margin-right: 250px; /* Adjust the space between elements */
+}
+
+.b1-btn {
+    width: 170px;
+    height: 150px;
+    background-image: url('../asset/build23.jpg'); 
+    background-size: cover; /* This will make sure the image fits within the button */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+    border-color: black;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-right: 100px;
+    /* Adjust the space between elements */
+}
+
+.b2-btn {
+    width: 170px;
+    height: 150px;
+    background-image: url('../asset/build15.png'); 
+    background-size:auto; /* This will make sure the image fits within the button */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+    border-color: black;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-right: 100px;
+    /* Adjust the space between elements */
+}
+
+.b3-btn {
+    width: 170px;
+    height: 150px;
+    background-image: url('../asset/build2.jpg'); 
+    background-size: auto; /* This will make sure the image fits within the button */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
+    border-color: black;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-right: 100px;
+    /* Adjust the space between elements */
+}

@@ -1,0 +1,441 @@
+/* Google Font - Kanit*/
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap');
+
+
+*{
+    font-family: 'Mitr', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{ 
+    /* ======= Colors ======== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #353535;
+    --primary-color: #f3bc14;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #e1e1e1;
+    --table-color: #cdd1dd;
+
+    /* ========= Transition ========= */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+body{
+    height: 100vh;
+    background: var(--body-color);
+
+}
+
+
+/* ===== Sidebar ====== */
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 330px;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
+}
+
+/*===== Resuable CSS ======*/
+.sidebar .text{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.sidebar .image{
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+}
+/* .sidebar ul{
+    background-color: red;
+    align-items: center;
+} */
+.sidebar li{
+    
+    height: 80px;
+    margin-top: 5px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+    font-size: 20px;
+}
+.sidebar li .icon,
+.sidebar li .text{
+    color: var(--text-color);
+    transition: var(--tran-02);
+}
+.sidebar header{
+    position: relative;
+    
+}
+.sidebar .image-text img{
+    width: 30px;
+    border-radius: 6px;
+}
+
+.sidebar header .image-text{
+    display: flex;
+    align-items: center;
+}
+
+header .image-text .header-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text .name{
+    font-weight:  600;
+}
+.header-text .profession{
+    margin-top: -2px;
+    font-size: 14px;
+}
+
+.sidebar header .toggle{
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 30px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--sidebar-color);
+    font-size: 22px;
+}
+
+.sidebar .search-box{
+    background: var(--primary-color-light);
+}
+
+.search-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background: var(--primary-color-light);
+}
+.sidebar li a{
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: var(--tran-04);
+}
+.sidebar li a:hover{
+    background: var(--primary-color);
+}
+
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text{
+    color: var(--text-color);
+}
+
+
+
+
+.topnav {
+    position: relative;
+    background: var(--primary-color);
+    overflow: hidden;
+  }
+  
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: var(--sidebar-color);
+  }
+  
+
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+  .container{
+    /* margin-right: 50px; */
+
+
+  }
+.w3-container{
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+.w3-color{
+    background: var(--primary-color);
+}
+
+ 
+.w3-bar-item{
+    margin-top: 5%;
+    position: relative;
+    justify-content: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 1px;
+    transition: var(--tran-04);
+}
+.w3-font{
+    font-family: 'Mitr', sans-serif;
+    
+}
+.w3-button{
+    border-radius: 15px;
+}
+
+  /* styles.css */
+
+/* เลือกสไตล์ของตาราง */
+.table-custom {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* เลือกสไตล์ของเฮดเดอร์แถว */
+.table-custom th {
+    background-color: #D9D9D9;
+    color: #000;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* เลือกสไตล์ของข้อมูลในตาราง */
+.table-custom td {
+    background-color: var(--table-color);
+    color: #000;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* เลือกสไตล์ของแถวของข้อมูลที่เปลี่ยนสีเมื่อผู้ใช้โฮเวอร์ */
+.table-custom tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* เลือกสไตล์ของตารางเมื่อตารางมีเซลล์ที่เป็นของงาน */
+.table-custom .table-active {
+    background-color: #ccc;
+}
+
+
+
+/* addroom.css */
+.head {
+    font-size: 24px;
+    color: hsl(0, 0%, 61%);
+    margin-bottom: 20px; /* Add space (blank area) below the text */
+}
+
+
+.add {
+    font-size: 15px;
+    color: hsl(0, 0%, 61%);
+    margin-bottom: 20px; /* Add space (blank area) below the text */
+}
+
+.text-build {
+    display: block;
+    justify-content: space-between;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.text-build a {
+    text-decoration: none;
+    color: black;
+    margin-right: 135px; /* Adjust the space between elements */
+}
+
+/* CSS for the dropdown button */
+.dropdown-btn {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50px; /* Add border radius */
+    margin-top: 20px;
+    margin-right: 60px; /* Add space between dropdown button and text block */
+    float: left; /* Float the button to the left */
+}
+
+/* CSS for the dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown menu when button is hovered or clicked */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Show dropdown menu when button is clicked */
+.show {
+    display: block;
+}
+/* CSS for the text block */
+.text-blockr {
+    float: left; /* Float the text block to the left */
+    margin-top: 20px;
+    margin-right: 60px;
+    text-align: center; /* Horizontally center the text */
+
+}
+
+.text-blockr textarea {
+    width: 150px; /* Set the width of the textarea */
+    height: 24px; /* Set the height of the textarea */
+    resize: none; /* Prevent resizing */
+    font-size: 14px; /* Set font size smaller */
+    border-radius: 50px;
+    background-color: #d9d9d9;
+}
+
+/* CSS for the text block */
+.text-blockn {
+    float: left; /* Float the text block to the left */
+    margin-top: 20px;
+    text-align: center; /* Horizontally center the text */
+}
+
+.text-blockn textarea {
+    width: 150px; /* Set the width of the textarea */
+    height: 24px; /* Set the height of the textarea */
+    resize: none; /* Prevent resizing */
+    font-size: 14px; /* Set font size smaller */
+    border-radius: 50px;
+    background-color: #d9d9d9;
+}
+
+/* CSS for the save button */
+.save-btn {
+    float: right; /* Float the button to the right */
+    margin-top: 200px;
+    margin-right: 30px;
+    width: 60px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #8ECD4F;
+    border-color: #8ECD4F;
+}
+
+/* Clear floating elements */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.addfile {
+    font-size: 15px;
+    color: hsl(0, 0%, 61%);
+    margin-top: 30px;
+    margin-bottom: 20px; /* Add space (blank area) below the text */
+}
+
+.addfile img {
+    width: 50px; /* Adjust the width of the image */
+    height: 60px; /* Adjust the height of the image */
+    cursor: pointer;
+    float: left; /* Float the image to the left */
+    margin-right: 15px; /* Adjust margin between image and text block */
+    margin-left: 15px;
+}
+
+.addfilet {
+    float: left; /* Float the text block to the left */
+    margin-top: 20px;
+    margin-right: 60px;
+    text-align: center; /* Horizontally center the text */
+}
+
+.edit{
+    margin-top: 80px;
+    color: hsl(0, 0%, 61%);
+}
+
+/* CSS for the text block */
+.text-blocke {
+    float: left; /* Float the text block to the left */
+    margin-top: 20px;
+    text-align: center; /* Horizontally center the text */
+}
+
+.text-blocke textarea {
+    width: 300px; /* Set the width of the textarea */
+    height: 100px; /* Set the height of the textarea */
+    resize: none; /* Prevent resizing */
+    font-size: 14px; /* Set font size smaller */
+    margin-left: 50px;
+    background-color: #ffff;
+}
+.modal-img {
+    max-width: 100%;
+    width: 100px;
+    height: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}

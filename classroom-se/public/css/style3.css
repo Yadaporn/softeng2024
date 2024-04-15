@@ -1,0 +1,302 @@
+/* Google Font - Kanit*/
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap');
+
+
+*{
+    font-family: 'Mitr', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{ 
+    /* ======= Colors ======== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #353535;
+    --primary-color: #60a5fa;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #e1e1e1;
+    --table-color: #cdd1dd;
+
+    /* ========= Transition ========= */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+body{
+    
+    height: 100vh;
+    background: var(--body-color);
+
+}
+
+
+/* ===== Sidebar ====== */
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 330px;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
+}
+
+/*===== Resuable CSS ======*/
+.sidebar .text{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.sidebar .image{
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+}
+/* .sidebar ul{
+    background-color: red;
+    align-items: center;
+} */
+.sidebar li{
+    
+    height: 80px;
+    margin-top: 5px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+    font-size: 20px;
+}
+.sidebar li .icon,
+.sidebar li .text{
+    color: var(--text-color);
+    transition: var(--tran-02);
+}
+.sidebar header{
+    position: relative;
+    
+}
+.sidebar .image-text img{
+    width: 30px;
+    border-radius: 6px;
+}
+
+.sidebar header .image-text{
+    display: flex;
+    align-items: center;
+}
+
+header .image-text .header-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text .name{
+    font-weight:  600;
+    font-size: 20px;
+    margin-left: 5%;
+}
+.header-text .profession{
+    margin-top: -2px;
+}
+
+.sidebar header .toggle{
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 30px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--sidebar-color);
+    font-size: 22px;
+}
+
+.sidebar .search-box{
+    background: var(--primary-color-light);
+}
+
+.search-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background: var(--primary-color-light);
+}
+.sidebar li a{
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: var(--tran-04);
+}
+.sidebar li a:hover{
+    background: var(--primary-color);
+}
+
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text{
+    color: var(--text-color);
+}
+
+
+
+
+.topnav {
+    position: relative;
+    background: var(--primary-color);
+    overflow: hidden;
+  }
+  
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: var(--sidebar-color);
+  }
+  
+
+  .topnav a.active {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+
+  .topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+
+  
+  
+/* styles.css */
+
+/* เลือกสไตล์ของตาราง */
+.table-custom {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* เลือกสไตล์ของเฮดเดอร์แถว */
+.table-custom th {
+    background-color: #D9D9D9;
+    color: #000;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* เลือกสไตล์ของข้อมูลในตาราง */
+.table-custom td {
+    background-color: var(--table-color);
+    color: #000;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* เลือกสไตล์ของแถวของข้อมูลที่เปลี่ยนสีเมื่อผู้ใช้โฮเวอร์ */
+.table-custom tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* เลือกสไตล์ของตารางเมื่อตารางมีเซลล์ที่เป็นของงาน */
+.table-custom .table-active {
+    background-color: #ccc;
+}
+
+.w3-container{
+    
+    background: var(--primary-color);
+    color: var(--sidebar-color);
+    
+}
+.w3-color{
+    background: var(--primary-color);
+}
+.w3-sidebar{
+    font-size: 20px;
+}
+.w3-button{
+    border-radius: 15px;
+}
+
+ 
+.w3-bar-item{
+    margin-top: 5%;
+    position: relative;
+    justify-content: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 1px;
+    transition: var(--tran-04);
+}
+.w3-font{
+    font-family: 'Mitr', sans-serif;
+    
+}
+
+ 
+
+.button-container {
+    display: block;
+    justify-content: center; /* จัดการย่อหรือขยายขนาดของปุ่มให้อยู่กลาง */
+    gap: 20px; /* ระยะห่างระหว่างปุ่ม */
+}
+
+.btn {
+    padding: 10px 20px; /* ขนาดของปุ่ม */
+    border: none; /* ไม่มีเส้นขอบ */
+    border-radius: 5px; /* ขอบมนเรียบ */
+    cursor: pointer; /* เปลี่ยนรูปเมาส์เป็นลูกศร */
+    text-decoration: none; /* ไม่มีเส้นใต้ข้อความ */
+}
+
+.btn-green {
+    background-color: #28a745; /* สีเขียว */
+    color: #fff; /* สีข้อความ */
+}
+
+.btn-yellow {
+    background-color: #ffc107; /* สีเหลือง */
+    color: #212529; /* สีข้อความ */
+}
+
+/* เมื่อเมาส์ไปชี้ปุ่ม */
+.btn:hover {
+    opacity: 0.8; /* ลดความโปร่งใสของปุ่ม */
+}

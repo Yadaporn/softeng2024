@@ -1,0 +1,249 @@
+/* addroom.css */
+.head {
+    font-size: 24px;
+    color: hsl(0, 0%, 61%);
+    margin-bottom: 20px;
+    /* Add space (blank area) below the text */
+}
+
+
+
+.add {
+    font-size: 15px;
+    color: hsl(0, 0%, 61%);
+    margin-bottom: 20px;
+    /* Add space (blank area) below the text */
+}
+
+.text-build {
+    display: block;
+    justify-content: space-between;
+    margin-top: 20px;
+    /* Adjust margin as needed */
+}
+
+.text-build a {
+    text-decoration: none;
+    color: black;
+    margin-right: 135px;
+    /* Adjust the space between elements */
+}
+
+/* CSS for the dropdown button */
+.dropdown-btn {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50px;
+    /* Add border radius */
+    margin-top: 20px;
+    margin-right: 60px;
+    /* Add space between dropdown button and text block */
+    float: left;
+    /* Float the button to the left */
+}
+
+/* CSS for the dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown menu when button is hovered or clicked */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Show dropdown menu when button is clicked */
+.show {
+    display: block;
+}
+
+/* CSS for the text block */
+.text-blockr {
+    float: left;
+    /* Float the text block to the left */
+    margin-top: 20px;
+    margin-right: 60px;
+    text-align: center;
+    /* Horizontally center the text */
+
+}
+
+.text-blockr textarea {
+    width: 150px;
+    /* Set the width of the textarea */
+    height: 24px;
+    /* Set the height of the textarea */
+    resize: none;
+    /* Prevent resizing */
+    font-size: 14px;
+    /* Set font size smaller */
+    border-radius: 50px;
+    background-color: #d9d9d9;
+}
+
+/* CSS for the text block */
+.text-blockn {
+    float: left;
+    /* Float the text block to the left */
+    margin-top: 20px;
+    text-align: center;
+    /* Horizontally center the text */
+}
+
+.text-blockn textarea {
+    width: 150px;
+    /* Set the width of the textarea */
+    height: 24px;
+    /* Set the height of the textarea */
+    resize: none;
+    /* Prevent resizing */
+    font-size: 14px;
+    /* Set font size smaller */
+    border-radius: 50px;
+    background-color: #d9d9d9;
+}
+
+/* CSS for the save button */
+.save-btn {
+    float: right;
+    /* Float the button to the right */
+    margin-top: 80px;
+    margin-right: 30px;
+    width: 60px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #8ECD4F;
+    border-color: #8ECD4F;
+}
+
+/* Clear floating elements */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.addfile {
+    font-size: 15px;
+    color: hsl(0, 0%, 61%);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    /* Add space (blank area) below the text */
+}
+
+.addfile img {
+    width: 50px;
+    /* Adjust the width of the image */
+    height: 60px;
+    /* Adjust the height of the image */
+    cursor: pointer;
+    float: left;
+    /* Float the image to the left */
+    margin-right: 15px;
+    /* Adjust margin between image and text block */
+    margin-left: 15px;
+}
+
+.addfilet {
+    float: left;
+    /* Float the text block to the left */
+    margin-top: 20px;
+    margin-right: 60px;
+    text-align: center;
+    /* Horizontally center the text */
+}
+
+/* General form styling */
+.form-group {
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 4%;
+    
+}
+
+label {
+    display: block;
+    /* Ensures label is on its own line */
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.form-control {
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    margin-top: 0;
+    /* Adjusted for alignment */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+    /* Ensures input is on the next line */
+}
+
+.form-control:focus {
+    border-color: #4A90E2;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.5);
+}
+
+/* Error message and other styling remains the same */
+
+/* Error message styling */
+.my-2 {
+    margin: 10px 0;
+}
+
+.text-danger {
+    color: #ff0000;
+}
+
+/* Submit button styling */
+.btn-primary {
+    background-color: #8ECD4F;
+    border-color: #8ECD4F;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 90%;
+}
+
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+ label#excelFileUploadLabel {
+    color: hsl(0, 0%, 61%);
+    
+}
+
+.form-group img {
+    width: 80px;
+    height: 100px;
+}

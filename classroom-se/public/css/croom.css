@@ -1,0 +1,197 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f0f0f0;
+    
+}
+
+form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#dropdown2 {
+    width: 120px;
+    /* This will override the width set in the general select rule */
+    /* Add any other specific styles for dropdown2 here */
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+label {
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
+}
+
+input[type="number"] {
+    width: 85px;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text1"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    width: 80px;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label [for="dropdown2"] {
+    width: 80px;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+    padding-top: 100px; /* Location of the modal box */
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 100px;
+    border: 1px solid #888;
+    border-radius: 25px;
+    width: 467px; /* Adjust the width as necessary */
+    height: 467x; /* Adjust the height as necessary */
+    overflow: auto; /* Add scroll if content is larger than the modal */
+    /* Center the modal vertically and horizontally in the window */
+    position: relative;
+}
+
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.image-container {
+    text-align: center; /* Horizontally center the image */
+    /* Vertically and horizontally center the image if the container has a specific height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust the height as necessary */
+}
+.ok-btn {
+    background-color: #4CAF50; /* Green background */
+    color: black; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer/hand icon */
+    text-decoration: none; /* Remove underline from anchors if applied */
+    display: inline-block; /* Allow it to sit next to other inline elements */
+    font-size: 16px; /* Text size */
+    align-items: center;
+    margin-right: 50px;
+}
+
+.ok-btn:hover {
+    background-color: #45a049; /* Darker shade of green for hover effect */
+}
+
+.status-btn {
+    background-color: #FF5C5C; /* Green background */
+    color: black; /* White text */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Some padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer/hand icon */
+    text-decoration: none; /* Remove underline from anchors if applied */
+    display: inline-block; /* Allow it to sit next to other inline elements */
+    font-size: 16px; /* Text size */
+    
+}
+
+.status-btn:hover {
+    background-color: #FF5C5C; /* Darker shade of green for hover effect */
+}
+.button-container {
+    text-align: center; /* Center the buttons within the container */
+    padding: 20px; /* Add some padding */
+}
